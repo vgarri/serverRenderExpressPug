@@ -7,7 +7,7 @@ const morgan = require("./middlewares/morgan")
 // Logger
 app.use(morgan(':method :url :status - :response-time ms :body'));
 app.use(express.json()); // Middleware para parsear el body de las peticiones
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));//PARA RECIBIR EL BODY DE LOS FORMS :))))))))))))) Y MANDARLO A RUTA
 //habilitar static
 app.use(express.static('public'));//middleware para servir archivos estáticos de front: CSS, JS, Assets
 
