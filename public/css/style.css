@@ -1,0 +1,224 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(#FFD6FF, #C8B6FF, #E7C6FF);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section > img{
+    width: 500px;
+  }
+  
+  h1, h2, h3, p {
+    margin-bottom: 8px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #028090;
+  }
+  
+  h2, h3 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Encabezado */
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    color: #333;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Contenedor principal */
+  main, .container {
+    justify-content: center;
+    max-width: 800px;
+    background-color: #e4fde1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 600px;
+  }
+  
+  /* Estilos para la sección de detalles de la película */
+  section.movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  section.movie-details img {
+    max-width: 90%;
+    max-height: 400px;
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin cortarla */
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  /* Estilos del formulario */
+  fieldset {
+    border: none;
+    margin-bottom: 30px;
+  }
+  
+  legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .ghost-input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .ghost-input:focus {
+    border-color: #007bff;
+  }
+  
+  .ghost-button, a.button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #028090;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ghost-button:hover, a.button:hover {
+    background-color: #026a70;
+  }
+  
+  /* Sección de sugerencias */
+  .suggestions {
+    margin-bottom: 20px;
+  }
+  
+  .suggestions h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .popular-movies {
+    list-style: none;
+  }
+  
+  .popular-movies li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .popular-movies li:last-child {
+    border-bottom: none;
+  }
+  
+  .popular-movies h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .popular-movies p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Sección de descripción */
+  .description {
+    margin-top: 20px;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+    color: #555;
+  }
+  
+  .description h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  footer p {
+    color: #aaa;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    main {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    h2, h3, p {
+      font-size: 0.95rem;
+    }
+  }

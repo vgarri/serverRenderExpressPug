@@ -6,7 +6,30 @@ html
     link(rel="stylesheet", type="text/css", href="/css/style.css")
     link(href="https://fonts.googleapis.com/css?family=Open+Sans:300", rel="stylesheet", type="text/css")
   body
-    section
-        form(action="/film" method="post")
-          input(type="text" name="title" class="ghost-input" placeholder="Search by title")
-          button(type="submit") Get Film
+    h1 OMBD Search App
+     .container
+        fieldset
+            form(action="/film" method="post")
+                input(type="text" name="title" class="ghost-input" placeholder="Search by title")
+                button(type="submit") Get Film
+    .suggestions
+        h2 Popular movies
+        // Puedes agregar un contenedor con películas populares o destacadas
+        ul.popular-movies
+          li
+            h3 The Devil Wears Prada
+            p Year: 2006 | Director: David Frankel
+          li
+            h3 The Boy and The Heron
+            p Year: 2023 | Director: Hayao Miyazaki
+          li
+            h3 C'è Ancora Domani
+            p Year: 2023 | Director: Paola Cortellesi
+          li
+            h3 Volver
+            p Year: 2006 | Director: Pedro Almodóvar
+          li
+            h3 Sinister
+            p Year: 2012 | Director: Scott Derrickson
+        // Description or additional info section
+        
